@@ -25,4 +25,4 @@ class TestWaterManagement(unittest.TestCase):
     def test_case4(self):
         file_path = "\\".join(os.path.dirname(__file__).split("\\")[:-1])
         ws = WaterManagement()
-        ws.calculate_bill(f"{file_path}\\water_managment\\tests\\case4")
+        ws.calculate_bill(f"{file_path}\\water_managment\\tests\\case5")
