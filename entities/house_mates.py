@@ -5,7 +5,7 @@ from entities.expense_calculator import ExpenseCalculator
 class HouseMates:
     def __init__(self):
         self.house_mates = []
-        self.expense_Cal = ExpenseCalculator()
+        self.expense_cal = ExpenseCalculator()
 
     def _is_house_ful(self):
         return len(self.house_mates) >= 3
@@ -15,6 +15,7 @@ class HouseMates:
             print(HOUSEFUL)
         else:
             self.house_mates.append(member)
+            self.expense_cal.initialize(member)
             print(SUCCESS)
 
     def _is_valid_house_mate(self, members):
